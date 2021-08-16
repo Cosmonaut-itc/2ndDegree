@@ -2,6 +2,7 @@ package mx.tec.a2nddegree
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
@@ -24,7 +25,12 @@ class MainActivity : AppCompatActivity() {
         //Code for the Calculation button
         val buttonCalculate : Button =findViewById(R.id.calculateButton)
         buttonCalculate.setOnClickListener(){
+            if(addAtext.text.toString().isEmpty() || addBtext.text.toString().isEmpty() || addCtext.text.toString().isEmpty()){
+                Log.e("LOGTAG", "You need all of the variables")
+            }
+            else{
 
+            }
         }
     }
 }
