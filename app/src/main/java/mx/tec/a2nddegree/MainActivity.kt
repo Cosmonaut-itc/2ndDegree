@@ -3,6 +3,8 @@ package mx.tec.a2nddegree
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
+import android.widget.EditText
+import android.widget.TextView
 
 class MainActivity : AppCompatActivity() {
 
@@ -10,8 +12,16 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        //Code for the Calculation button
+        //add edit text Variables
+        val addAtext : EditText=findViewById(R.id.addAText)
+        val addBtext : EditText=findViewById(R.id.addBtext)
+        val addCtext : EditText=findViewById(R.id.addCText)
 
+        //add result text variables
+        val textResult1 : TextView=findViewById(R.id.resultText1)
+        val textResult2 : TextView=findViewById(R.id.textResult2)
+
+        //Code for the Calculation button
         val buttonCalculate : Button =findViewById(R.id.calculateButton)
         buttonCalculate.setOnClickListener(){
 
