@@ -7,6 +7,26 @@
     tools:context=".MainActivity">
 
 
+    <EditText
+        android:id="@+id/addCText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Add c"
+        android:inputType="textPersonName"
+        tools:layout_editor_absoluteX="73dp"
+        tools:layout_editor_absoluteY="300dp" />
+
+    <EditText
+        android:id="@+id/addBtext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Add b"
+        android:inputType="textPersonName"
+        tools:layout_editor_absoluteX="73dp"
+        tools:layout_editor_absoluteY="240dp" />
+
     <TextView
         android:id="@+id/bTextView"
         android:layout_width="18dp"
@@ -46,12 +66,12 @@
         tools:layout_editor_absoluteY="194dp" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName"
+        android:id="@+id/addAText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="Name"
+        android:hint="Add a"
         tools:layout_editor_absoluteX="73dp"
         tools:layout_editor_absoluteY="185dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>
